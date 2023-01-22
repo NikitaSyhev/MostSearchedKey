@@ -6,7 +6,7 @@ class DataManager {
 
 public:
 
-	int mostSearchedKey() { // создали конструктов
+	int mostSearchedKey() { // создали функцию для поиска
 		std::unordered_map<int, int> keyAmount; // создали контейнер unordered_map, который назвали keyAmount, для хранения ключей и их количества
 		for (size_t i = 0; i < _keys.size(); i++) {// идем по циклу for, ищем внутри вектора _keys ( метод size() - возвращает размер вектора, и мы заказчиваем поиск на i = размеру вектора
 			const auto& [it, isInserted] = keyAmount.insert({ // создаем переменные, в которые записываем it - в нее записывает ключ из _keys ( например, мы прошли через цифру 1, записали 1). 
